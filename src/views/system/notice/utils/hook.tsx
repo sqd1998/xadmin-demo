@@ -13,6 +13,7 @@ import { addDialog } from "@/components/ReDialog";
 import { getDefaultAuths, hasAuth } from "@/router/utils";
 import { useI18n } from "vue-i18n";
 import { NoticeChoices } from "@/views/system/constants";
+
 import type {
   PageTableColumn,
   OperationProps,
@@ -67,6 +68,7 @@ export function useNotice(tableRef: Ref) {
       }
     ]
   });
+
   const listColumnsFormat = (columns: PageTableColumn[]) => {
     columns.forEach(column => {
       switch (column._column?.key) {

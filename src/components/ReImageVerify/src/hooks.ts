@@ -13,7 +13,14 @@ export const useImageVerify = imgCode => {
     getCaptchaApi()
       .then(res => {
         if (res.code === 1000) {
-          imgUrl.value = res.captcha_image;
+          //https://localhost:8848/api/system/captcha/image/a38c8f46cb810541c1bf7d270fc48e1577610ea3/
+          //将https://localhost:8848转换为https://xadmin.dvcloud.xin
+          imgUrl.value = res.captcha_image.replace(
+            "https://localhost:8848",
+            "https://xadmin.dvcloud.xin"
+          );
+
+          // imgUrl.value = res.captcha_image;
           imgCode.value = res.captcha_key;
           useUserStoreHook().SET_VERIFY_CODE_LENGTH(res.length);
         }

@@ -23,9 +23,9 @@ const {
     :auth="auth"
     locale-name="demoBook"
     :search-columns-format="searchColumnsFormat"
-    :add-or-edit-options="addOrEditOptions"
     :list-columns-format="listColumnsFormat"
     :tableBarButtonsProps="tableBarButtonsProps"
     :operationButtonsProps="operationButtonsProps"
+    :addOrEditOptions="addOrEditOptions"
   />
 </template>

@@ -188,7 +188,7 @@ class WS {
         }
         this.delay = setTimeout(async () => {
           await getUsedAccessToken();
-          this.reconnectHandle();
+          // this.reconnectHandle();
         }, timeout);
       };
     }

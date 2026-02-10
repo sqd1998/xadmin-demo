@@ -26,7 +26,7 @@ export default ({ mode }: ConfigEnv): UserConfigExport => {
       host: "0.0.0.0",
       // 本地跨域代理 https://cn.vitejs.dev/config/server-options.html#server-proxy
       proxy: createProxyConfig({
-        "http://127.0.0.1:8896": ["/api", "/media", "/api-docs"],
+        "https://xadmin.dvcloud.xin": ["/api", "/media", "/api-docs"],
         "ws://127.0.0.1:8896": ["/ws"]
       }),
       // 预热文件以提前转换和缓存结果，降低启动期间的初始页面加载时长并防止转换瀑布
