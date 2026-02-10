@@ -67,7 +67,6 @@ export type menuType = {
   path?: string;
   noShowingChildren?: boolean;
   children?: menuType[];
-  value: unknown;
   meta?: {
     icon?: string;
     title?: string;
